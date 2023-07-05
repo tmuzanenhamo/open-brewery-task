@@ -1,0 +1,44 @@
+.brewery-view {
+    &__title {
+      font-size: 1rem;
+      font-weight: bold;
+    }
+
+    &__wrapper {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 2em;
+    }
+  
+    &__details {
+      border: 1px solid $clr-border;
+      padding: 1rem;
+      margin-top: 1rem;
+    }
+  
+    &__item {
+      margin-bottom: 0.5rem;
+    }
+  
+    &__label {
+      display: inline-block;
+      font-weight: bold;
+      width: 120px;
+    }
+  
+    &__value {
+      margin-left: 0.5rem;
+    }
+  
+    &__link {
+      color: $clr-primary;
+      text-decoration: none;
+  
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  
