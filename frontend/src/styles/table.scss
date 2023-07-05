@@ -1,0 +1,28 @@
+.brewery-table {
+    width: 100%;
+    border-collapse: collapse;
+  
+    &__header {
+      padding: 8px;
+      text-align: left;
+      font-weight: bold;
+      border-bottom: 1px solid $clr-border;
+    }
+  
+    &__row {
+        &:nth-child(even) {
+            background-color: $clr-background;
+          }
+      
+          &:nth-child(odd) {
+            background-color: $clr-white;
+          }
+    }
+  
+    &__cell {
+      padding: 8px;
+      text-align: left;
+      border-bottom: 1px solid $clr-border;
+    }
+  }
+  
