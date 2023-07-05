@@ -20,7 +20,7 @@ const Results = () => {
       setBreweries(response.data);
     } catch (error) {
       console.error("Error fetching breweries:", error);
-      // Handle error
+      setLoading(false);
       throw error;
     }
     setLoading(false);

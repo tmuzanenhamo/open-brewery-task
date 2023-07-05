@@ -24,6 +24,7 @@ const BreweryView = () => {
         setBrewery(response.data[0]);
         setLoading(false);
       } catch (error) {
+        setLoading(false);
         console.error("Error fetching brewery:", error);
       }
     };
