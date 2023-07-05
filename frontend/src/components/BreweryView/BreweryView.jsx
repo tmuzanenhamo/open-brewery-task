@@ -33,7 +33,7 @@ const BreweryView = () => {
   }, [params]);
 
   if (loading) {
-    <Loader />;
+    return (<Loader />);
   }
 
   if (!brewery) {
@@ -69,7 +69,7 @@ const BreweryView = () => {
         </div>
         <div className="brewery-view__item">
           <strong className="brewery-view__label">Location:</strong>
-          <span className="brewery-view__value">{`${brewery?.address?.city}, ${brewery?.address?.country}`}</span>
+          <span className="brewery-view__value">{`${brewery?.address?.city ? brewery?.address?.city : ''}, ${brewery?.address?.country ? brewery?.address?.country : ''}`}</span>
         </div>
         <div className="brewery-view__item">
           <strong className="brewery-view__label">Website:</strong>
