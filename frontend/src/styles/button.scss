@@ -1,0 +1,15 @@
+.button {
+    background-color: $clr-primary;
+    border-radius: 4px;
+    color: $clr-white;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    transition: all 0.2s ease-in-out;
+    border: none;
+    min-width: 120px;
+    
+    &:hover {
+        opacity: .8;
+    }
+}
